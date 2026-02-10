@@ -1,6 +1,6 @@
 # CPM - Conservation Process Model
 
-This page contains the code, info and guideline for the use of CPM. 
+This page contains codes, info and guideline for using CPM. 
 
 The CPM represents the semantic contents of cultural heritage conservation process and points at achieving integration, mediation and interchange of information in the midst of  cultural heritage conservation discipline.
 
