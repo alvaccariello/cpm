@@ -1,6 +1,6 @@
 # CPM - Conservation Process Model
 
-This page contains codes, info and guideline for using CPM. 
+This page contains codes, info and guidelines related to CPM. 
 
 The CPM represents the semantic contents of cultural heritage conservation process and points at achieving integration, mediation and interchange of information in the midst of  cultural heritage conservation discipline.
 
@@ -17,7 +17,7 @@ It focuses on the specificities of architecture, of the project of architectural
 <a href="https://orcid.org/0000-0003-4596-0470"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon"> Alessia Vaccariello</a>
 
 Recommended citation: 
-Acierno M., Fiorani D. (2025) Conservation Process Model. An ontology for Conservation in Architecture. [Data set]. Zenodo. https://doi.org/10.13133/9788893773843
+Acierno M., Fiorani D. (2025) Conservation Process Model. An ontology for Conservation in Architecture, Sapienza University Press, Rome. [Data set]. Zenodo. https://doi.org/10.13133/9788893773843
 
 ## For details:
 https://www.editricesapienza.it/sites/default/files/6249_9788893773843_Conservation_Process_Model_eBook.pdf
