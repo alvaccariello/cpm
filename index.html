@@ -3,9 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <title>CPM Ontology</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2a5d84;
+      border-bottom: 2px solid #2a5d84;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
   <h1>CPM Ontology</h1>
-  <p>Your RDF file is available here: <a href="ontology.rdf">ontology.rdf</a></p>
+
+  <section>
+    <p>Welcome to the <strong>CPM Ontology</strong> repository. This ontology defines classes and properties for [brief description of your domain].</p>
+  </section>
+
+  <section>
+    <h2>Download</h2>
+    <p>You can download the RDF/XML file here:</p>
+    <ul>
+      <li><a href="ontology.rdf">ontology.rdf</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>W3ID Namespace</h2>
+    <p>The ontology has a permanent W3ID namespace:</p>
+    <pre><a href="https://w3id.org/cpm-arch/cpm">https://w3id.org/cpm-arch/cpm</a></pre>
+    <p>All classes and properties are under this namespace, e.g., <code>https://w3id.org/cpm-arch/cpm/MyClass</code>.</p>
+  </section>
+
+  <section>
+    <h2>Documentation</h2>
+    <ul>
+      <li><a href="README.md">Project README</a> — General description, installation, and usage</li>
+      <li><a href="ontology.rdf">Ontology RDF file</a> — Machine-readable ontology</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <p>You can view the ontology directly in your browser or use it with semantic web tools. Ensure that any tools you use follow RDF/XML standards.</p>
+  </section>
 </body>
 </html>
