@@ -1,0 +1,2713 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/cpm-arch/cpm/"
+     xml:base="https://w3id.org/cpm-arch/cpm/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="https://w3id.org/cpm-arch/cpm"/>
+  
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/MyClass"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/myProperty"/>
+  
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/extensions/crminf/"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc1 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc1_affects">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc1i_is_subject_to"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP41_Environmental_Observable_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This property documents that an instance of CP41 Environmental Observable Entity affects an instance of class E1 Entity. This property may be used to describe the fact that external factors that can be observed through visual analysis or by the means of special instruments are affecting a whichever instance of E1 Entity. It has been conceived to describe the action of natural phenomenon such as winds, temperature, atmospheric agents on, either, man-made items, as architecture, or natural elements, as caves or cliffs. Man made items may refer to very heterogenous elements spreading from urban areas to singular building component</rdfs:comment>
+        <rdfs:label>affects</rdfs:label>
+        <skos:notation>Pc1</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc1i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc1i_is_subject_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc1_affects"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP41_Environmental_Observable_Entity"/>
+        <rdfs:label>is subject to</rdfs:label>
+        <skos:notation>Pc1i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc2 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc2_has_as_general_vocation">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc2i_is_the_general_vocation_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:comment>This property documents that an instance of E7 Activity is mainly performed within an instance of CP18 Space Entity. The property allows the description of the functional vocation of activity mainly performed in an architectural (CP20 Spatial Unit or CP22 Space Component) or urban space (CP19 Historic Centre or CP 20 Space Ensemble), that are subclasses of CP18 Space Entity. This property is mainly referring to conditions revealed by economic and statistical surveys. As an example, this property may describe the agricultural vocation of a village or the specific productive activity (industry, fishing, handycrafts etc.) of an historic centre or the religious vocation of a district.</rdfs:comment>
+        <rdfs:label>has as general vocation</rdfs:label>
+        <skos:notation>Pc2</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc2i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc2i_is_the_general_vocation_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc2_has_as_general_vocation"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>is the general vocation of</rdfs:label>
+        <skos:notation>Pc2i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc3 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc3_has_connection_through">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc3i_connects"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP40_Historic_Centre"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+        <rdfs:comment>This property documents that an instance of CP40 Historic Centre is joined (connected) to its environment through an instance of E24 Physical Human made thing. The property is mainly conceived to describe which is the main route of communication that connects an historical centre to the territory.</rdfs:comment>
+        <rdfs:label>has connection through</rdfs:label>
+        <skos:notation>Pc3</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc3i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc3i_connects">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc3_has_connection_through"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP40_Historic_Centre"/>
+        <rdfs:label>connects</rdfs:label>
+        <skos:notation>Pc3i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc4 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc4_shows_building_feature">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc4i_building_feature_is_shown_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP28_Building_Feature"/>
+        <rdfs:comment>This property documents that an instance of CP1 Built entity Shows building features specified by an instance of CP28 Building Feature</rdfs:comment>
+        <rdfs:label>shows building feature</rdfs:label>
+        <skos:notation>Pc4</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc4i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc4i_building_feature_is_shown_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc4_shows_building_feature"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP28_Building_Feature"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>building feature is shown in</rdfs:label>
+        <skos:notation>Pc4i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc5 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc5_is_inhabited_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc5i_inhabits"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP19_Historic_Centre"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+        <rdfs:comment>This property documents that an instance of CP19 Historic Centre is related with an instance of E74 Group. The property is conceived to specify properties about the people who live in the area considered either to specify the number or other characteristics such as the origin, the religion etc.</rdfs:comment>
+        <rdfs:label>is inhabited by</rdfs:label>
+        <skos:notation>Pc5</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc5i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc5i_inhabits">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc5_is_inhabited_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP19_Historic_Centre"/>
+        <rdfs:label>inhabits</rdfs:label>
+        <skos:notation>Pc5i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc6 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc6_was_fostered_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc6i_fostered"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP42_Material_Decay"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
+        <rdfs:comment>This property documents that an instance of CP42 Material Decay was made possible by a specific E3 Condition State. It refers to the need to describe, beyond the causes of a particular state of degradation due to specific factors such as dampness as an example, the environmental agents such as climate or exposition that are described through the class condition state.</rdfs:comment>
+        <rdfs:label>was fostered by</rdfs:label>
+        <skos:notation>Pc6</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc6i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc6i_fostered">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc6_was_fostered_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP42_Material_Decay"/>
+        <rdfs:label>fostered</rdfs:label>
+        <skos:notation>Pc6i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc7 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc7_is_connected_through">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc7i_connects"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property documents that an instance of CP1 Built Entity is connected through an instance of CP1 Built Entity to another built element. This circumstance is mainly referred to historical centres’ fabric.</rdfs:comment>
+        <rdfs:label>is connected through</rdfs:label>
+        <skos:notation>Pc7</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc7i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc7i_connects">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc7_is_connected_through"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>connects</rdfs:label>
+        <skos:notation>Pc7i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc8 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc8_is_connected_to">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property documents that an instance of CP1 Built Entity is connected to another instance of CP1 Built Entity. This circumstance is mainly referred to historical centres’ fabric.</rdfs:comment>
+        <rdfs:label>is_connected_to</rdfs:label>
+        <skos:notation>Pc8</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc9 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc9_belongs_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc9i_owns"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:comment>This property documents that an instance CP18 Space Entity belongs to an instance of E39 Actor.</rdfs:comment>
+        <rdfs:label>belongs to</rdfs:label>
+        <skos:notation>Pc9</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc9i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc9i_owns">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc9_belongs_to"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:label>owns</rdfs:label>
+        <skos:notation>Pc9i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc10 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc10_belongs_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc10i_owns"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:comment>This property documents that an instance of CP2 Architectural Work belongs to an instance of E39 Actor.</rdfs:comment>
+        <rdfs:label>belongs to</rdfs:label>
+        <skos:notation>Pc10</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc10i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc10i_owns">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc10_belongs_to"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:label>owns</rdfs:label>
+        <skos:notation>Pc10i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc11 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc11_is_bounded_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc11i_bounds"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP14_Urban_Unit_Front"/>
+        <rdfs:comment>This property documents that an instance of CP 16 Urban Area is bounded by (Pc11) an instance of CP 14 Urban Unit Front. The property intends to describe the boundaries of an urban area in the cases in which they are constituted by the façades of the buildings. Particularly the property intends to describe not only the geometrical perimeter but the elevations that characterize the area.</rdfs:comment>
+        <rdfs:label>is bounded by</rdfs:label>
+        <skos:notation>Pc11</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc11i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc11i_bounds">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc11_is_bounded_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP14_Urban_Unit_Front"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:label>bounds</rdfs:label>
+        <skos:notation>Pc11i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc12 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc12_is_related_to_public_area_through">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc12i_allows_the_relationship_to_the_public_area_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP10_Building_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP11_Building_Front"/>
+        <rdfs:comment>This class includes instances of coherent architectural organisms populating an urban historical setting. It consists in a single construction phase or by the merging/recasting of several pre-existing building units. This kind of organism is characterized by the presence of one or more functional units (residential and non-residential) connected to each other through common distribution elements and served by access at the road level; it is bordered by external facades with a generally continuous eaves line and a unitary or composite roof composed of flat and/or inclined parts consistent with all fronts (Acierno, Fiorani, Velios 2021). Instances of CP10 Building Unit differ from instances of CP2 Architectural Work for being related to an edifice that is considered a component of an urban historical setting. Meaning that instances of CP10 Building Unit are buildings which are components of an urban tissue, where the main characteristics are the relationships established among them.</rdfs:comment>
+        <rdfs:label>is related to public area through</rdfs:label>
+        <skos:notation>Pc12</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc12i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc12i_allows_the_relationship_to_the_public_area_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc12_is_related_to_public_area_through"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP11_Building_Front"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP10_Building_Unit"/>
+        <rdfs:label>allows the relationship to the public area of</rdfs:label>
+        <skos:notation>Pc12i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc13 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc13_is_regulated_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc13i_regulates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:comment>This property documents that an instance of CP2 Architectural Work is regulated from the legislative point of view by an instance of E32 Authority document, in the sense that every action performed on the object must follow the prescriptions expressed in the document. The authority document may be a monumental constraint, an urban planning tool etc. </rdfs:comment>
+        <rdfs:label>is regulated by</rdfs:label>
+        <skos:notation>Pc13</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc13i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc13i_regulates">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc13_is_regulated_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:label>regulates</rdfs:label>
+        <skos:notation>Pc13i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc14 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc14_is_regulated_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc14i_regulates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:comment>This property documents that an instance of CP18 Space Entity is protected from the legislative point of view by an instance of E32 Authority document, in the sense that every action performed on the instance considered must follow the prescriptions expressed in the document. The authority document may be a monumental constraint, an urban planning tool etc.</rdfs:comment>
+        <rdfs:label>is regulated by</rdfs:label>
+        <skos:notation>Pc14</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc14i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc14i_regulates">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc14_is_regulated_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:label>regulates</rdfs:label>
+        <skos:notation>Pc14i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc15 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc15_shows_plan_configuration_type">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc15i_is_configuration_type_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP10_Building_Unit"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This property documents that an instance of CP2 Architectural Work shows plan configuration type expressed by an instance of the class E55 Type.</rdfs:comment>
+        <rdfs:label>shows plan configuration type</rdfs:label>
+        <skos:notation>Pc15</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc15i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc15i_is_configuration_type_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc15_shows_plan_configuration_type"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP10_Building_Unit"/>
+        <rdfs:label>is configuration type of</rdfs:label>
+        <skos:notation>Pc15i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc16 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc16_shows_structural_system_type">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc16i_structural_system_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP35_Building-Formal_Type"/>
+        <rdfs:comment>This property associates an instance of CP35 Building Formal Type with an instance of CP1 Built Entity. It allows to describe the structural system of a building relating it to a thesaurus that gathers both formal, constructive and structural features.</rdfs:comment>
+        <rdfs:label>shows structural system</rdfs:label>
+        <skos:notation>Pc16</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc16i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc16i_structural_system_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc16_shows_structural_system"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP35_Building-Formal_Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>is structural system of</rdfs:label>
+        <skos:notation>Pc16i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc17 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc17_has_performance_efficiency_documented_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc17i_documents_performance_efficiency_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment>This property associates an instance of CP2 Architecture work with an E73 Information Object documenting specifically performance efficiency. This can be required in several different domains as accessibility, sustainability, or plants efficiency.</rdfs:comment>
+        <rdfs:label>has performance efficiency documented in</rdfs:label>
+        <skos:notation>Pc17</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc17i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc17i_documents_performance_efficiency_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc17_has_performance_efficiency_documented_in"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:label>documents performance efficiency of</rdfs:label>
+        <skos:notation>Pc17i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc18 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc18_has_physical_relation_with">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property associates an instance of CP1 Built Entity with another instance of CP1 Built Entity documenting the physical relation existing between them. This property allows to describe the constructive layering shown by a building or a part of it. It is generally completed by a property type which specifies the kind of relation. If, for example, a wall has a physical relation with another wall beeing built on it or filling one of its windows.</rdfs:comment>
+        <rdfs:label>has physical relation with</rdfs:label>
+        <skos:notation>Pc18</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc19 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc19_shows_masonry_feature">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc19i_masonry_feature_is_shown_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP28_Building_Feature"/>
+        <rdfs:comment>This property documents that an instance CP5 Constructive Element Plural Shows masonry features specified by an instance of CP28 Building Feature.</rdfs:comment>
+        <rdfs:label>shows masonry feature</rdfs:label>
+        <skos:notation>Pc19</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc19i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc19i_masonry_feature_is_shown_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc19_shows_masonry_feature"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP28_Building_Feature"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:label>masonry feature is shown in</rdfs:label>
+        <skos:notation>Pc19i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc20 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc20_shows_building_homogeneity_with">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc20i_symmetrical"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This property documents that an instance CP2 Architectural Work shows building homogeneity with another instance of CP2 Architectural Work.</rdfs:comment>
+        <rdfs:label>shows building homogeneity with</rdfs:label>
+        <skos:notation>Pc20</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc20i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc20i_symmetrical">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc20_shows_building_homogeneity_with"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:label>symmetrical</rdfs:label>
+        <skos:notation>Pc20i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc21 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc21_addressed">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc21i_was_addressed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:comment>This property documents that an instance CP 49 Urban Plan Addressed an instance of CP45 Architecture project. It intends to describe the relation that exists between an urban plan and an architecture project that is normally subdued to the former and conceived within the framework that the urban plan describes.</rdfs:comment>
+        <rdfs:label>addressed</rdfs:label>
+        <skos:notation>Pc21</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc21i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc21i_was_addressed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc21_addressed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:comment>This property documents that an instance CP 49 Urban Plan Addressed an instance of CP45 Architecture project. It intends to describe the relation that exists between an urban plan and an architecture project that is normally subdued to the former and conceived within the framework that the urban plan describes.</rdfs:comment>
+        <rdfs:label>was addressed by</rdfs:label>
+        <skos:notation>Pc21i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc22 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc22_shows_building-formal_type">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc22i_building-formal_type_is_shown_on"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP35_Building-Formal_Type"/>
+        <rdfs:comment>This property documents that an instance CP2 Architectural Work shows a particular typology. This may be further specified whether the information concerns its distribution or its structural system (eg. continuous, punctual).</rdfs:comment>
+        <rdfs:label>shows building-formal type</rdfs:label>
+        <skos:notation>Pc22</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc22i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc22i_building-formal_type_is_shown_on">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc22_shows_building-formal_type"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP35_Building-Formal_Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:label>building-formal type is shown on</rdfs:label>
+        <skos:notation>Pc22i</skos:notation>
+    </owl:ObjectProperty>
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc23 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc23_made_use_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc23i_used"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E11_Modification"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:comment>This property identifies an instance of CP9 Building material used by an instance of E11 Modification.
+E11 Modification commonly foresees the use of particular instances of S10 Material substantial. The modification realized to consolidate lime mortars, for example, requires ethyl silicate. This property enables this to be documented.</rdfs:comment>
+        <rdfs:label>made use of</rdfs:label>
+        <skos:notation>Pc23</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc23i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc23i_used">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc23_made_use_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E11_Modification"/>
+        <rdfs:label>used</rdfs:label>
+        <skos:notation>Pc23i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc24 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc24_occurred_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc24i_was_subdued_to"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property identifies the result (CP1 Bult Entity) of an instance CP25 Conservation Intervention. This property enables the documentation of the outcome of a conservation intervention. Conservation intervention realized in a building may also entail the modification of some features such as its internal distribution, the shape of some of its components (windows, roof etc.), its function, without modifying its identity and with the aim of preserving it for the future.</rdfs:comment>
+        <rdfs:label>occurred in</rdfs:label>
+        <skos:notation>Pc24</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc24i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc24i_was_subdued_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc24_occurred_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:label>was subdued to</rdfs:label>
+        <skos:notation>Pc24i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc25 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc25_occurs_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc25i_is_subdued_to"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property identifies the building (CP2 Architectural Work) on which the intervention s occurring at the moment of the documentation.</rdfs:comment>
+        <rdfs:label>occurs in</rdfs:label>
+        <skos:notation>Pc25</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc25i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc25i_is_subdued_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc25_occurs_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:label>is subdued to</rdfs:label>
+        <skos:notation>Pc25i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc26 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc26_is_illustrated_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc26i_illustrates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:comment>This property associates an instance of CP38 Architecture Representation Object with an instance of CP 33 Architecture Conservation Project and it allows to relate the conservation project to the different levels of representation, that may concern either alphanumeric documents as the project report, bill of quantities or graphic documents.</rdfs:comment>
+        <rdfs:label>is illustrated by</rdfs:label>
+        <skos:notation>Pc26</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc26i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc26i_illustrates">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc26_is_illustrated_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:label>illustrates</rdfs:label>
+        <skos:notation>Pc26i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc27 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc27_entails">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc27i_is_entailed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E11_Modification"/>
+        <rdfs:comment>This property documents that a conservation intervention (CP25) has realised a modification (E11) on the building it has involved. It is useful to specify the kind of result obtained by the conservation intervention.</rdfs:comment>
+        <rdfs:label>entails</rdfs:label>
+        <skos:notation>Pc27</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc27i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc27i_is_entailed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc27_entails"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E11_Modification"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:label>is entailed by</rdfs:label>
+        <skos:notation>Pc27i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc28 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc28_requires_to_be_repeated_within">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP23_Maintenance"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <rdfs:comment>This property associates an instance of the class CP23 Maintenance with and instance of the class of E52 Timespan. It enables to document the timespan that it is foreseen to be observed between two consequent maintenance interventions (CP23).</rdfs:comment>
+        <rdfs:label>requires to be repeated within</rdfs:label>
+        <skos:notation>Pc28</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc29 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc29_adopted">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc29i_was_adopted_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E81_Transformation"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:comment>This property identifies the materials (CP9) adopted by (Pc30i) an instance of E81 Transformation.
+E81 Transformation necessarily adopts different materials. This property enables this to be documented.</rdfs:comment>
+        <rdfs:label>adopted</rdfs:label>
+        <skos:notation>Pc29</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc29i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc29i_was_adopted_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc29_adopted"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E81_Transformation"/>
+        <rdfs:label>was adopted by</rdfs:label>
+        <skos:notation>Pc29i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc30 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc30_resulted_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc30i_resulted_from"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E81_Transformation"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property associates an instance of E81 Transformation with an instance of CP1 Built Entity. It aims at documenting the result of transformation interventions which may involve either a building or a part of it.</rdfs:comment>
+        <rdfs:label>resulted in</rdfs:label>
+        <skos:notation>Pc30</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc30i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc30i_resulted_from">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc30_resulted_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E81_Transformation"/>
+        <rdfs:label>resulted from</rdfs:label>
+        <skos:notation>Pc30i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc31 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc31_transformed">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc31i_was_transformed_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E81_Transformation"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property associates an instance of E81 Transformation with an instance of CP1 Buit Entity. It allows to describe all the interventions occurred on a building or part of it that have modified its identity.</rdfs:comment>
+        <rdfs:label>transformed</rdfs:label>
+        <skos:notation>Pc31</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc31i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc31i_was_transformed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc31_transformed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E81_Transformation"/>
+        <rdfs:label>was transformed by</rdfs:label>
+        <skos:notation>Pc31i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc32 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc32_provided_as_output">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc32i_was_output_for"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP32_Architecture_Features_Assessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:comment>This property associates an instance of CP32 Architecture Features assessment with an instance of CP27 Architecture Analysis Output. The outputs of the architectural analysis result from inferences as the assessments that orient the conservation project are not only based on data collection but require reasoning taking into account the architectural features of the building or the documentary sources existing on it. Inferences elaborated from the observation of architectural features provide as output the result of the architectural analysis.</rdfs:comment>
+        <rdfs:label>provided as output</rdfs:label>
+        <skos:notation>Pc32</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc32i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc32i_was_output_for">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc32_provided_as_output"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP32_Architecture_Features_Assessment"/>
+        <rdfs:label>was output for</rdfs:label>
+        <skos:notation>Pc32i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc33 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc33_forsees">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc33i_is_foreseen_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Conservation_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:comment>This property associates an instance of CP25 Conservation Intervention with an instance of CP33 Conservation Project and it allows to express the allographic nature of architecture and its conservation. The project itself is a subclass of E29 design while its realisation is conceived as a subclass of E7 activity.</rdfs:comment>
+        <rdfs:label>forsees</rdfs:label>
+        <skos:notation>Pc33</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc33i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc33i_is_foreseen_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc33i_forsees"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Conservation_Project"/>
+        <rdfs:label>is foreseen by</rdfs:label>
+        <skos:notation>Pc33i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc34 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc34_used_as_input">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc34i_was_input_for"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP24_Architecture_Conservation_Project_Activity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <rdfs:comment>This property associates an instance of CP33 Conservation Project activity with instances of E 13 Attribute Assignment that act as a guideline for the conservation project. Conservation Project (CP33) is elaborated moving from the attribute assignments carried out as outputs (CP27) during the architecture analysis which is compulsory to intervene on cultural heritage architecture. A use case of this property is to describe what elements, retrieved from the architecture analysis, have oriented the conservation project.</rdfs:comment>
+        <rdfs:label>used as input</rdfs:label>
+        <skos:notation>Pc34</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc34i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc34i_was_input_for">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc34_used_as_input"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP24_Architecture_Conservation_Project_Activity"/>
+        <rdfs:label>was input for</rdfs:label>
+        <skos:notation>Pc34i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc35 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc35_is_expressed_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc35i_expresses"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP24_Architecture_Conservation_Project_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Conservation_Project"/>
+        <rdfs:comment>This property associates an instance of CP24 Conservation Project Activity with an instance of CP33 Conservation Project and it allows to distinguish between the activity of elaborating the conservation project and the document that represents the result of this activity which is the project itself.</rdfs:comment>
+        <rdfs:label>is expressed in</rdfs:label>
+        <skos:notation>Pc35</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc35i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc35i_expresses">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc35_is_expressed_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Conservation_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP24_Architecture_Conservation_Project_Activity"/>
+        <rdfs:label>expresses</rdfs:label>
+        <skos:notation>Pc35i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc36 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc36_addressed">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc36i_was_addressed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP24_Architecture_Conservation_Project_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:comment>This property associates an instance of CP24 Conservation Project Activity with an instance of CP25 Conservation Intervention and it allows to distinguish between the activity of elaborating the conservation project and the realisation of it. The conservation Project Activity (CP24) has addressed the conservation intervention (CP25) which was realised by the construction company. Esempi nella classe (per me non chiaro): the activity for the development of the maintenance plan for the Fontana dei Fiumi in piazza Navona, Rome (Pandolfi 2016). The activity for the definition of the monitoring plan of the Basilica di Massenzio in Rome (Moretti et al. 2018).</rdfs:comment>
+        <rdfs:label>addressed</rdfs:label>
+        <skos:notation>Pc36</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc36i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc36i_was_addressed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc36_addressed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP24_Architecture_Conservation_Project_Activity"/>
+        <rdfs:label>was addressed by</rdfs:label>
+        <skos:notation>Pc36i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc37 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc37_complies_with">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc37i_binds"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:comment>This property associates an instance of CP33 Architecture Conservation Project with an instance of E32 Autority Document and it allows to associate the conservation project activity to the pertaining normative references. The conservation project activity in Italy complies necessarily with the D.lgs. n.42/2004.</rdfs:comment>
+        <rdfs:label>complies with</rdfs:label>
+        <skos:notation>Pc37</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc37i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc37i_binds">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc37_complies_with"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:label>binds</rdfs:label>
+        <skos:notation>Pc37i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc38 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc38_specifies">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc38i_is_specified_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:comment>This property associates an instance of CP27Architecture Analysis Output with an instance of CP9 Building material and it allows to express which materials have been identified within the building material analysis. The specification of the material substantial is the result of an assessment and is considered as an output of the analysis process.</rdfs:comment>
+        <rdfs:label>specifies</rdfs:label>
+        <skos:notation>Pc38</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc38i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc38i_is_specified_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc38_specifies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:label>is specified by</rdfs:label>
+        <skos:notation>Pc38i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc39 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc39_characterises">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc39i_is_characterised_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:comment>This property associates an instance of CP1 Built Entity with an instance of CP18 Space Entity and allows to describe which is the connotative element of an historical centre or an urban area. Connotative elements may be very heterogeneous such as built towers or balconies or opus craticium walls.</rdfs:comment>
+        <rdfs:label>characterises</rdfs:label>
+        <skos:notation>Pc39</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc39i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc39i_is_characterised_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc39_characterises"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>is characterised by</rdfs:label>
+        <skos:notation>Pc39i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc40 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc40_is_facing_onto">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc40i_is_the_overlook_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:comment>This property associates an instance of CP2 Architecture work with an instance of CP16 Urban Area and allows to describe that a building is overlooking an Urba Area (CP 16). This property is necessary to express the physical relation that is established between a building and the space onto it is facing through the façade. This relation is expressing the threshold role that is recognized to a façade between private and public space. It is describing a twofold relationship referring either to the connection that an observer may have with the outer space through a window looking outside or to the role that the building façade is playing as a backdrop for the urban space.</rdfs:comment>
+        <rdfs:label>is facing onto</rdfs:label>
+        <skos:notation>Pc40</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc40i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc40i_is_the_overlook_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc40i_is_facing_onto"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:label>is the overlook of</rdfs:label>
+        <skos:notation>Pc40i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc41 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc41_shows_as_main_material">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc40i_is_shown_as_main_material_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:comment>This property associates an instance of CP1 Built Entity with an instance of CP9 Building material and allows to describe which is the principal material that can be observed in a building, or a part of it, without intending to specify all the materials that have been used to build the edifice, but the one which is prevailing and directly observable through the view. It refers explicitly to a building material (eg. concrete, marble etc.).</rdfs:comment>
+        <rdfs:label>shows as main material</rdfs:label>
+        <skos:notation>Pc41</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc41i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc41i_is_shown_as_main_material_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc41_shows_as_main_material"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>is shown as main material of</rdfs:label>
+        <skos:notation>Pc41i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc42 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc42_was_embodied_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc42i_embodied"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property associates an instance of E11 Modification with an instance of CP1 Built Entity and allows to describe the physical result of the modification a building went through. This property makes it possible to represent the physical Entity that resulted from the activity of modifying a building or a part of it.</rdfs:comment>
+        <rdfs:label>was embodied by</rdfs:label>
+        <skos:notation>Pc42</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc42i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc42i_embodied">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc42_was_embodied_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>embodied</rdfs:label>
+        <skos:notation>Pc42i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc43 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc43_is_used_for">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc43i_uses"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:comment>This property associates an instance of E7 Activity with an instance of CP1 Built Entity and allows to describe the activity the building (CP2 architectural Work) or a part of it (CP1 Built Entity) is used for. It refers to the utilitas of the building coping with the building as physical shelter, differently from the property Pc 6 that put into relation an activity with an architectural space (formalized as a space time volume).</rdfs:comment>
+        <rdfs:label>is used for</rdfs:label>
+        <skos:notation>Pc43</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc43i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc43i_uses">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc43_is_used_for"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>uses</rdfs:label>
+        <skos:notation>Pc43i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc44 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc44_illustrates">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc44i_is_illustrated_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP34_Architecture_Depiction"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP38_Architecture_Conservation_Project"/>
+        <rdfs:comment>This property associates an instance of CP38 Architecture Representation Object with an instance of CP 34 Architecture Depiction and allows to describe the content of a graphic representation.</rdfs:comment>
+        <rdfs:label>illustrates</rdfs:label>
+        <skos:notation>Pc44</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc44i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc44i_is_illustrated_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc44_illustrates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP38_Architecture_Conservation_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP34_Architecture_Depiction"/>
+        <rdfs:label>is illustrated by</rdfs:label>
+        <skos:notation>Pc44i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc45 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc45_has_morphology_type">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP44_Construction_Site"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This property associates an instance of CP44 Construction Site with an instance of E55 Type. The property intends to describe the morphology of identifiable features, as they are described in CIDOC CRM, that “are physically attached in an integral way to particular physical objects or are portions of particular objects with partially imaginary borders, such as the core of the Earth, an area of property on the surface of the Earth, a landscape or the head of a contiguous marble statue”. In architecture this property may be used to describe the morphology of the CP 44 Construction Site, that is a subclass of E26 Physical feature. It is conceived to represent the land involved in the construction, regardless of the construction consistency and nature. The morphology of the construction site may be documented either for a historical centre or for a building.</rdfs:comment>
+        <rdfs:label>has morphology type</rdfs:label>
+        <skos:notation>Pc45</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc46 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc46_has_geology_type">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP44_Construction_Site"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This property associates an instance of CP44 Construction Site with an instance of E55 Type. The property intends to describe the specific geological nature of an area of property on the surface of the Earth or a landscape involved in the built area. As for the morphology documentation it may concern either historical centres or buildings.</rdfs:comment>
+        <rdfs:label>has geology type</rdfs:label>
+        <skos:notation>Pc46</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc47 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc47_modified">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:comment>This property allows to document the modifications that may occur on an urban plan. This circumstance may be addressed either to describe modifications that may be needed during the urban designing process or as the result of later intervention. These modifications may be triggered by intrinsic or extrinsic factors that may have intervened also independently of the designer's will.</rdfs:comment>
+        <rdfs:label>modified</rdfs:label>
+        <skos:notation>Pc47</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc48 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc48_planned">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc48i_was_planned_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:comment>This property associates an instance of CP49 Urban Plan with an instance of CP 16 Urban Area and it allows to refer an urban area (CP 16) to an urban plan (CP49).</rdfs:comment>
+        <rdfs:label>planned</rdfs:label>
+        <skos:notation>Pc48</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc48i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc48i_was_planned_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc48_planned"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:label>was planned by</rdfs:label>
+        <skos:notation>Pc48i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc49 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc49_fostered">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc49i_was_fostered_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP43_Structural_Damage"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
+        <rdfs:comment>This property allows to relate an instance of CP 43 Structural damage with an instance of E3 Condition State. It allows to describe the conditions of a building or part of it that have fostered a structural damage. As a matter of facts the structural damage may be caused by specific events or by some building conditions that may influence the decay phenomenons. Those condition may be referred either to a inadequate maintenance or to not inappropriate interventions. As an example, a defect in a roof if not quickly repaired could make it possible that the water hits the structure which may be not able to resist. As a consequence, the building or part of it at first shows cracks and secondly collapses. Also a superelevation of a building if not adequately planned may provoke an excessive load on the masonry generating cracks.</rdfs:comment>
+        <rdfs:label>fostered</rdfs:label>
+        <skos:notation>Pc49</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc49i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc49i_was_fostered_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc49_fostered"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP43_Structural_Damage"/>
+        <rdfs:label>fostered</rdfs:label>
+        <skos:notation>Pc49i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc50 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc50_incorporates">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc50i_is_incorporated_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP34_Architecture_Depiction"/>
+        <rdfs:comment>This property associates an instance of CP33 Conservation Project with an instance of CP 34 Architecture Depiction. The property intends to describe the specificity of the conservation project that is conceived as a result of the gathering of several analysis that are normally represented through different architectural depictions.</rdfs:comment>
+        <rdfs:label>incorporates</rdfs:label>
+        <skos:notation>Pc50</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc50i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc50i_is_incorporated_in">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc50_incorporates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP34_Architecture_Depiction"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project"/>
+        <rdfs:label>is incorporated in</rdfs:label>
+        <skos:notation>Pc50i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc51 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc51_was_affected_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc51i_was_generated_on"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP42_Material_Decay"/>
+        <rdfs:comment>This property associates an instance of CP 9 Building Material with an instance of CP 42 Material Decay. The property intends to describe which is the material decay (CP 42 Material Decay) that has affected the material that constitutes a particular physical object or part of it.</rdfs:comment>
+        <rdfs:label>was affected by</rdfs:label>
+        <skos:notation>Pc51</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc51i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc51i_was_generated_on">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc51_was_affected_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP42_Material_Decay"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:label>was generated on</rdfs:label>
+        <skos:notation>Pc51i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc52 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc52_was_assessed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc52i_assessed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP31_Mechanical_Damage_Assessment"/>
+        <rdfs:comment>This property associates an instance of CP1 Built Entity with an instance of CP31 Mechanical damage assessment. The property intends to describe which structural evaluation process CP31 Mechanical damage assessment has involved a particular building or part of it.</rdfs:comment>
+        <rdfs:label>was assessed by</rdfs:label>
+        <skos:notation>Pc52</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc52i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc52i_assessed">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc52_was_assessed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP31_Mechanical_Damage_Assessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>assessed</rdfs:label>
+        <skos:notation>Pc52i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc53 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc53_has_modified">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc53i_was_modified_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:comment>This property allows to relate two different instances of Pc45 Architecture Project making it possible describe all the modifications that may occur during the constructive phases of an architectural project.</rdfs:comment>
+        <rdfs:label>has modified</rdfs:label>
+        <skos:notation>Pc53</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc53i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc53i_was_modified_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc53_has_modified"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:label>was modified by</rdfs:label>
+        <skos:notation>Pc53i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc54 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc54_planned">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc54i_was_planned_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property allows to relate a project to a building or a part of it. Such a description is generally needed within the documentation of an architecture when it is necessary to distinguish the phases of the transformation occurred and more specifically the origin of the particular parts.</rdfs:comment>
+        <rdfs:label>planned</rdfs:label>
+        <skos:notation>Pc54</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc54i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc54i_was_planned_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc54_planned"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:label>was planned by</rdfs:label>
+        <skos:notation>Pc54i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc55 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc55_directed">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc55i_was_directed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP46_Building_Activity"/>
+        <rdfs:comment>This property associates an instance of CP45 Architecture Project to an instance of CP46 Building Activity to allow the description of the document the building activity is referring to. Actually, the architecture project involves many different activities, not only describing the design but also giving practical instructions to make the realisation of the building possible, such as the executive drawings or the planning of the yard.</rdfs:comment>
+        <rdfs:label>directed</rdfs:label>
+        <skos:notation>Pc55</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc55i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc55i_was_directed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc55_directed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP46_Building_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project"/>
+        <rdfs:label>was directed by</rdfs:label>
+        <skos:notation>Pc55i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc56 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc56_was_realised_on">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc56i_was_subdued_to"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP46_Building_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property allows to relate a Cp1 Built Entity to the building activity that has generated it. It is particularly useful when the documentation of a building or a part of it requires to refer to the specific intervention that was at the origin of it.</rdfs:comment>
+        <rdfs:label>was realised on</rdfs:label>
+        <skos:notation>Pc56</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc56i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc56i_was_subdued_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc56_was_realised_on"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP46_Building_Activity"/>
+        <rdfs:label>was subdued to</rdfs:label>
+        <skos:notation>Pc56i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc57 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc57_shows_decoration_type">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc57i_is_decoration_type_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP7_Architecture_Decoration"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP47_Decoration_Type"/>
+        <rdfs:comment>This property allows to relate a Cp1 Built Entity to the building activity that has generated it. It is particularly useful when the documentation of a building or a part of it requires to refer to the specific intervention that was at the origin of it.</rdfs:comment>
+        <rdfs:label>shows decoration type</rdfs:label>
+        <skos:notation>Pc57</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc57i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc57i_is_decoration_type_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc57_shows_decoration_type"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP47_Decoration_Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP7_Architecture_Decoration"/>
+        <rdfs:label>is decoration type of</rdfs:label>
+        <skos:notation>Pc57i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc58 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc58_represents">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc58i_is_representation_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP7_Architecture_Decoration"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This property allows to relate an instance of CP 7 Architecture decoration to an instance of E1 Entity and intends to describe the contents its representation.</rdfs:comment>
+        <rdfs:label>represents</rdfs:label>
+        <skos:notation>Pc58</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc58i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc58i_is_representation_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc58_represents"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP7_Architecture_Decoration"/>
+        <rdfs:label>is representation of</rdfs:label>
+        <skos:notation>Pc58i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc59 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc59_shows_equipment_type">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc59i_is_equipment_type_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP8_Equipment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP48_Equipment_Type"/>
+        <rdfs:comment>This property allows to relate an instance CP8 Equipment to an instance of CP 49 Equipment Type intends to specify the nature of the equipment referring to exiting thesauri. Equipment a conservation project refers to may be of any kind hydraulic, electric, air conditioning, heating etc.</rdfs:comment>
+        <rdfs:label>shows equipment type</rdfs:label>
+        <skos:notation>Pc59</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc59i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc59i_is_equipment_type_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc59_shows_equipment_type"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP48_Equipment_Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP8_Equipment"/>
+        <rdfs:label>is equipment type of</rdfs:label>
+        <skos:notation>Pc59i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc60 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc60_realised">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc60i_was_realised_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP46_Building_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property allows to relate an instance CP46 Building Activity to an instance of CP1 Built Entity. It intends to identify the activity that produced the building or part of it, allowing to describe all the activities connected to the yard, the providing of materials, the workers etc.</rdfs:comment>
+        <rdfs:label>realised</rdfs:label>
+        <skos:notation>Pc60</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc60i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc60i_was_realised_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc60_realised"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP46_Building_Activity"/>
+        <rdfs:label>was realised by</rdfs:label>
+        <skos:notation>Pc60i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc61 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc61_was_affected_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc61i_was_generated_on"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP43_Structural_Damage"/>
+        <rdfs:comment>This property allows to relate an instance CP1 Built Entity to an instance of CP43 Structural damage. It intends to identify the structural damage that was produced in a building and specify which part of it was involved. It allows to describe the structural condition within a decay analysis.</rdfs:comment>
+        <rdfs:label>was affected by</rdfs:label>
+        <skos:notation>Pc61</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc61i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc61i_was_generated_on">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc61_was_affected_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP43_Structural_Damage"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>was generated on</rdfs:label>
+        <skos:notation>Pc61i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc62 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc62_was_caused_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc62i_caused"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP43_Structural_Damage"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:comment>This property allows to relate an instance of CP 43 Structural damage with an instance of E5 Event. It identifies which event was at the origin of a specific structural damage.</rdfs:comment>
+        <rdfs:label>was caused by</rdfs:label>
+        <skos:notation>Pc62</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc62i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc62i_caused">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc62_was_caused_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP43_Structural_Damage"/>
+        <rdfs:label>caused</rdfs:label>
+        <skos:notation>Pc62i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc63 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc63_is_crossed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc63i_crosses"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:comment>This property allows to relate an instance of CP 20 Construction Work to an instance of CP1 Built Entity. It intends to describe the relation between a construction element and an architecture work or part of it when they are in a condition of mutual interference. Particularly this property allows to describe the condition of a construction element intersecting a building or part of, as for example a lintel intersecting the apse of a church or a trace to realise electric system intersecting a wall.</rdfs:comment>
+        <rdfs:label>is crossed by</rdfs:label>
+        <skos:notation>Pc63</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc63i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc63i_crosses">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc63_is_crossed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>crosses</rdfs:label>
+        <skos:notation>Pc63i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc64 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc64_is_cladded_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc64i_clads"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:comment>This property allows to relate an instance of CP5 Construction Element Plural to an instance of CP1 Built Entity. It intends to describe the relation between a construction element plural and a built Entity, either it is an architecture work or a part of it, describing the cladding function of the first towards the second.</rdfs:comment>
+        <rdfs:label>is cladded by</rdfs:label>
+        <skos:notation>Pc64</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc64i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc64i_clads">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc64_is_cladded_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:label>clads</rdfs:label>
+        <skos:notation>Pc64i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc65 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc65_is_delimited_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc65i_delimits"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP40_Historic_Centre"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdfs:comment>This property allows to relate an instance of CP40 Historic Centre to an instance of E18 Physical Thing and describe their topographical relation. The property is connecting CP40 Historic Centre class with E18 Physical Thing that can represent very broad condition so to describe any kind of boundary an historic centre may have.</rdfs:comment>
+        <rdfs:label>is delimited by</rdfs:label>
+        <skos:notation>Pc65</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc65i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc65i_delimits">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc65_is_delimited_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP40_Historic_Centre"/>
+        <rdfs:label>delimits</rdfs:label>
+        <skos:notation>Pc65i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc66 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc66_is_defined_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc66i_defines"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP51_Building_Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:comment>This property allows to relate tan instance of CP51 Building Component with an instance of CP20 Construction Work so to describe their topographical relation and the boundaries a building component, as a nave of a church may have The property refers to boundaries that are constituted by built element or part of them. </rdfs:comment>
+        <rdfs:label>is defined by</rdfs:label>
+        <skos:notation>Pc66</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc66i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc66i_defines">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc66_is_defined_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP51_Building_Component"/>
+        <rdfs:label>defines</rdfs:label>
+        <skos:notation>Pc66i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc67 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc67_shows_as_construction_component">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc67i_is_the_construction_component_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP3_Construction_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP4_Construction_Component"/>
+        <rdfs:comment>This property allows to relate an instance of CP3 Construction Unit with an instance of the class CP4 Construction Component to describe their specific mereological relation. The property intends to make explicit the components that are constituting the construction unit. As an example the façade of a church shows as construction component the wall.</rdfs:comment>
+        <rdfs:label>shows as construction component</rdfs:label>
+        <skos:notation>Pc67</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc67i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc67i_is_the_construction_component_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc67_shows_as_construction_component"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP4_Construction_Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP3_Construction_Unit"/>
+        <rdfs:label>is the construction component of</rdfs:label>
+        <skos:notation>Pc67i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc68 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc68_shows_as_construction_element_plural">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc68i_is_construction_element_plural_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP4_Construction_Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:comment>This property allows to relate an instance of CP4 Construction Component with an instance of the class CP5 Construction Element Plural to describe their specific mereological relation. The property intends to make explicit the components that are constituting the construction component. As an example, a wall shows as construction element plural the masonry and the plaster cladding it.</rdfs:comment>
+        <rdfs:label>shows as construction element plural</rdfs:label>
+        <skos:notation>Pc68</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc68i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc68i_is_the_construction_element_plural_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc68_shows_as_construction_element_plural"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP4_Construction_Component"/>
+        <rdfs:label>is the construction element plural of</rdfs:label>
+        <skos:notation>Pc68i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc69 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc69_shows_as_construction_element_singular">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc69i_is_construction_element_singular_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP6_Construction_Element_Singular"/>
+        <rdfs:comment>This property allows to relate an instance of CP5 Construction Element Plural with an instance of the class CP6 Construction Element Singular to describe their specific mereological relation. The property intends to make explicit the singular elements (CP6) that are constituting the construction element plural (CP5). As an example the plaster shows as single construction elements the different layers of mortar, or a masonry shows as single construction elements the stone ashlars.</rdfs:comment>
+        <rdfs:label>shows as construction element singular</rdfs:label>
+        <skos:notation>Pc69</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc69i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc69i_is_construction_element_singular_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc69_shows_as_construction_element_plural"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP6_Construction_Element_Singular"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural"/>
+        <rdfs:label>is construction element singular of</rdfs:label>
+        <skos:notation>Pc69i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc70 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc70_passes_through">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc70i_is_crossed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP8_Equipment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:comment>This property allows to relate an instance of CP8 Equipment with an instance of the class CP 20 Construction Work to describe the condition of an equipment crossing a whatever part of the building. Particularly within conservation process this is a very sensitive condition that requires a major care, as ancient buildings may not bear the presence of them if not adequately designed.</rdfs:comment>
+        <rdfs:label>passes through</rdfs:label>
+        <skos:notation>Pc70</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc70i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc70i_is_crossed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc70_passes_through"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP8_Equipment"/>
+        <rdfs:label>is crossed by</rdfs:label>
+        <skos:notation>Pc70i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc71 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc71_is_intrinsically_connected_to">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP12_Building_Floor"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP12_Building_Floor"/>
+        <rdfs:comment>This property allows to relate two instances of CP 12 Building Floor to describe the condition of the connection between two floors. Particularly within conservation process this is a very sensitive condition that requires a major care, as ancient buildings may not bear the presence of them if not adequately designed.</rdfs:comment>
+        <rdfs:label>is intrinsically connected to</rdfs:label>
+        <skos:notation>Pc71</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc72 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc72_shows_geometry_plan_type">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP13_Urban_Unit"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This property allows to relate an instance of CP 13 Urban Unit to an instance of E55 Type in order to identify the geometry plan type of the building. The property is conceived to allow referring to thesauri describing the different geometries that are relevant not only for the formal reasons but mainly because they are influencing the structural vulnerability of the building.</rdfs:comment>
+        <rdfs:label>shows geometry plan type</rdfs:label>
+        <skos:notation>Pc72</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc73 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc73_is_facing_onto">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc73i_is_the_overlook_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP15_Open_Air_Area"/>
+        <rdfs:comment>This property associates an instance of CP2 Architecture work with an instance of CP 15 Open Air Area and allows to describe that a building is overlooking an area that is not a urban area. This property is necessary to express the physical relation that is established between a building and the space onto it is facing. It is describing a twofold relationship referring either to the connection that an observer may have with the outer space through a window looking outside or to the role that the building façade is playing as a backdrop for the open air area.</rdfs:comment>
+        <rdfs:label>is facing onto</rdfs:label>
+        <skos:notation>Pc73</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc73i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc73i_is_the_overlook_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc73_is_facing_onto"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP15_Open_Air_Area"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:label>is the overlook of</rdfs:label>
+        <skos:notation>Pc73i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc74 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc74_was_caused_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc74i_caused"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP42_Material_Decay"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:comment>This property allows to relate an instance of CP 42 Material Decay to an instance of E5 Event in order to describe the event that eventually caused the material decay. Although material decay is mostly triggered by environmental condition, some events may occur fostering decay or provoking some specific deterioration. The property is mainly conceived to describe extraordinary events, such as earthquakes of floodings.</rdfs:comment>
+        <rdfs:label>was caused by</rdfs:label>
+        <skos:notation>Pc74</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc74i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc74i_caused">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc74_was_caused_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP42_Material_Decay"/>
+        <rdfs:label>caused</rdfs:label>
+        <skos:notation>Pc74i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc75 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc74_can_be_referred_to_landscape_type">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc74i_landscape_type_can_be_referred_to"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP17_Landscape_Element"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This property allows to relate an instance of CP 17 Landscape Element to an instance of E55 Type in order to describe the element and associate it to the thesaurus derived from the Institutional Cultural Heritage Protection Lists. As a matter of facts the Italian Cultural Heritage code specifies different type of landscape element such as: parcs, panoramic views etc.</rdfs:comment>
+        <rdfs:label>can be referred to landscape type</rdfs:label>
+        <skos:notation>Pc75</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc75i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc74i_landscape_type_can_be_referred_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc74_can_be_referred_to_landscape_type"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP17_Cultural_Heritage_Landscape_Element"/>
+        <rdfs:label>landscape type can be referred to</rdfs:label>
+        <skos:notation>Pc75i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc76 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc76_is_marked_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc76i_marks"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP19_Historic_Centre"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP17_Landscape_Element"/>
+        <rdfs:comment>This property allows to relate an instance of CP 40 Historic Centre to an instance of CP 17 Landscape Element in order to describe the features characterizing the urban landscape of an historic centre. different types of landscape element could be parks, gardens, special viewpoints, panoramic views etc.</rdfs:comment>
+        <rdfs:label>is marked by</rdfs:label>
+        <skos:notation>Pc76</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc76i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc76i_marks">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc76_is_marked_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP17_Landscape_Element"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP19_Historic_Centre"/>
+        <rdfs:label>marks</rdfs:label>
+        <skos:notation>Pc76i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc77 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc77_has_as_space_component">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc77i_is_a_space_component_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP21_Space_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP22_Space_Component"/>
+        <rdfs:comment>This property allows to relate an instance of CP 21 Space Unit to an instance of CP 22 Space Component in order to describe the mereological relations between the elements that produce the spatial composition of an architecture work considering both dimension of space and time. A space unit may be a unitary area or the result of the juxtaposition of several space components. As an example, a church that shows Hallenkirche typology is conceived as a CP 21 Space Unit that cannot be further divided into spatial components) CP 22). Besides, a three naves church with an apse, is considered as a CP 21 Space Unit, that may be divided into several space components as the central nave, the two ailes and the apse.</rdfs:comment>
+        <rdfs:label>has as space component</rdfs:label>
+        <skos:notation>Pc77</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc77i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc77i_is_a_space_component_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc77_has_as_space_component"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP22_Space_Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP21_Space_Unit"/>
+        <rdfs:label>is a space component of</rdfs:label>
+        <skos:notation>Pc77i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc78 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc78_is_visually_related_to">
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:comment>This property allows to describe the relation between two instances of CP18 Space Entity to specify whether there is a visual continuity or not. As an example, a chapel may be communicating with the aisle of a church or may be separated from it through a wall and put into connection through a door. The property is conceived to express the relation at the higher level of the hierarchy of the architecture spaces (CP18 Space Entity) so to describe all the possible spatial solutions occurred in a specific time.</rdfs:comment>
+        <rdfs:label>is visually related to</rdfs:label>
+        <skos:notation>Pc78</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc79 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc79_transformed">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc79i_was_transformed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP26_Typological_Variation"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This property allows to relate an instance of CP 26 Typological variation with an instance of CP2 Architecture Work to describe the kind of transformation that occurred in an architecture work. The typological variation implies the transformation of architecture identity as it may tackle figurative, functional and structural issues that qualify a building.</rdfs:comment>
+        <rdfs:label>transformed</rdfs:label>
+        <skos:notation>Pc79</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc79i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc79i_was_transformed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc79_transformed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP26_Typological_Variation"/>
+        <rdfs:label>was transformed by</rdfs:label>
+        <skos:notation>Pc79i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc80 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc80_is_referred_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc80i_is_referred_to_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP29_Building_Phase"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This property allows to relate an instance of CP 29 Building Phase with an instance of CP1 Built Entity to refer a building or part of it to the reconstruction of the transformation phases formulated through a study to asses its historical and architectural value. More in detail the property allows to specify which is the building phase the architecture may be referred to.</rdfs:comment>
+        <rdfs:label>is referred to</rdfs:label>
+        <skos:notation>Pc80</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc80i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc80i_is_referred_to_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc80_is_referred_to_"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP29_Building_Phase"/>
+        <rdfs:label>is referred to by</rdfs:label>
+        <skos:notation>Pc80i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc81 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc81_planned_the_conservation_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc81i_was_planned_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP50_Urban_Conservation_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:comment>This property allows to relate an instance of CP 50 Urban conservation Plan with an instance of CP16 Urban Area. It specifies the object of the urban conservation plan.</rdfs:comment>
+        <rdfs:label>planned the conservation of</rdfs:label>
+        <skos:notation>Pc81</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc81i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc81i_was_planned_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc81_planned_the_conservation_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP50_Urban_Conservation_Plan"/>
+        <rdfs:label>was planned by</rdfs:label>
+        <skos:notation>Pc81i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc82 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc82_assessed_the_structural_conditions_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc82i_was_assessed_in_its_structural_conditions_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP30_Architecture_Condition_Assessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This property allows to relate an instance of CP 30 Architecture Condition Assessment
+with an instance of CP2 Architecture Work specifying the nature of the assessment the building or part of is going through. Particularly the property refers to the structural assessment that may detect a structural damage.</rdfs:comment>
+        <rdfs:label>assessed the structural conditions of</rdfs:label>
+        <skos:notation>Pc82</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc82i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc82i_was_assessed_in_its_structural_conditions_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc82_assessed_the_structural_conditions_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP30_Architecture_Condition_Assessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>assesses the structural conditions of</rdfs:label>
+        <skos:notation>Pc82i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc83 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc83_assessed_the_decay_condition_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc83i_was_assessed_in_its_decay_condition_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP30_Architecture_Condition_Assessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:comment>This property allows to relate an instance of CP 30 Architecture Condition Assessment with an instance of CP9 Building Material specifying the nature of the assessment the building is going through. Particularly the property refers to the decay condition of the building materials the architecture is made of. </rdfs:comment>
+        <rdfs:label>assessed the decay conditions of</rdfs:label>
+        <skos:notation>Pc83</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc83i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc83i_was_assessed_in_its_decay_condition_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc83_assessed_the_decay_condition_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP9_Building_Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP30_Architecture_Condition_Assessment"/>
+        <rdfs:label>was assessed in its decay condition by</rdfs:label>
+        <skos:notation>Pc83i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc84 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc84_gathers">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc84i_is_gathered_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP34_Architecture_Depiction"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:comment>This property allows to relate an instance of CP 34 Architecture Depiction with an instance of CP27 Architecture Analysis Output. This property allows to describe the nature of the class architectural depiction. It specifies its role within conservation process as a document that, gathering the results of the analysis that have been developed on the building, represents the knowledge required to orient a conservation project.</rdfs:comment>
+        <rdfs:label>gathers</rdfs:label>
+        <skos:notation>Pc84</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc84i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc84i_is_gathered_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc84_gathers"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP34_Architecture_Depiction"/>
+        <rdfs:label>is gathered by</rdfs:label>
+        <skos:notation>Pc84i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc85 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc85_was_subdued_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc85i_was_realised_on"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP23_Maintenance"/>
+        <rdfs:comment>This property allows to relate an instance of CP1 Built Entity
+with an instance of CP 23 Maintenance. This property allows to describe that a building or part of it was the object of a maintenance activity. Differently from conservation intervention, maintenance may be realised without a proper project, but just referring to a sequence of activities to be repeated in time.</rdfs:comment>
+        <rdfs:label>was subdued to</rdfs:label>
+        <skos:notation>Pc85</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc85i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc85i_was_realised_on">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc85_was_subdued_to"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP23_Maintenance"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:label>was realised on</rdfs:label>
+        <skos:notation>Pc85i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc86 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc86_addressed">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc86i_was_addressed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP50_Urban_Conservation_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Plan"/>
+        <rdfs:comment>This property allows to relate an instance of CP 50 Urban conservation Plan with an instance of CP 33 Conservation Project addressing the hierarchy relationship existing between the urban and the architectural scale. The conservation activity developed at the urban level necessarily orient the conservation of the buildings.</rdfs:comment>
+        <rdfs:label>addressed</rdfs:label>
+        <skos:notation>Pc86</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc86i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc86i_was_addressed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc86_addressed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP50_Urban_Conservation_Plan"/>
+        <rdfs:label>was addressed by</rdfs:label>
+        <skos:notation>Pc86i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc87 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc87_specified">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc87i_was_specified_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP50_Urban_Conservation_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:comment>This property allows to relate an instance of CP 50 Urban conservation Plan with an instance of CP49 Urban Plan addressing the hierarchy relationship existing between the urban planning and urban conservation planning. The first needs to be specified by the latter and leaves necessarily some open issues that are addressed to by conservation.</rdfs:comment>
+        <rdfs:label>specified</rdfs:label>
+        <skos:notation>Pc87</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc87i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc87i_was_specified_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc87_specified"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP50_Urban_Conservation_Plan"/>
+        <rdfs:label>was specified by</rdfs:label>
+        <skos:notation>Pc87i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc88 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc88_is_regulated_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc88i_regulates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:comment>This property documents that an instance of CP16 Urban area is regulated by (regulates), from the legislative point of view, an instance of E32 Authority Document, in the sense that every intervention performed on the area must follow the prescriptions expressed in the document. The authority document may be a monumental constraint, an urban planning tool etc. There is no case of a urban area not being under legislative authority control.</rdfs:comment>
+        <rdfs:label>is regulated by</rdfs:label>
+        <skos:notation>Pc88</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/Pc88i -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpm-arch/cpm/Pc88i_regulates">
+        <owl:inverseOf rdf:resource="https://w3id.org/cpm-arch/cpm/Pc88_planned_the_conservation_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E32_Authority_Document"/>
+        <rdfs:range rdf:resource="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area"/>
+        <rdfs:label>regulates</rdfs:label>
+        <skos:notation>Pc88i</skos:notation>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP1 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+        <rdfs:comment>This class comprises instances of man-made things such as freestanding buildings, construction units, construction components, construction elements, and complexes of buildings. It refers to man-made environments serving a practical purpose, being relatively permanent and stable. Instances of CP1 Built Entity consist of parts that perform a specific constructive or architectural function. Natural components, such as caves or rocky outcrops, even unworked ones, that are constructively and/or functionally integrated with existing architecture are also instances of CP1 Built Entity.</rdfs:comment>
+        <rdfs:label>Built Entity</rdfs:label>
+        <skos:notation>CP1</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP10 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP10_Building_Unit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This class includes instances of coherent architectural organisms populating an urban historical setting. It consists in a single construction phase or by the merging/recasting of several pre-existing building units. This kind of organism is characterized by the presence of one or more functional units (residential and non-residential) connected to each other through common distribution elements and served by access at the road level; it is bordered by external facades with a generally continuous eaves line and a unitary or composite roof composed of flat and/or inclined parts consistent with all fronts (Acierno, Fiorani, Velios 2021). Instances of CP10 Building Unit differ from instances of CP2 Architectural Work for being related to an edifice that is considered a component of an urban historical setting. Meaning that instances of CP10 Building Unit are buildings which are components of an urban tissue, where the main characteristics are the relationships established among them.</rdfs:comment>
+        <rdfs:label>Building Unit</rdfs:label>
+        <skos:notation>CP10</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP11 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP11_Building_Front">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This class includes instances corresponding to the façades of single building unit overlooking on an urban space or, more generally, on a street or a square but also on the natural margin of the town (maritime, river, lake coast, promontory limit, etc.) (Acierno, Fiorani, Velios 2021)</rdfs:comment>
+        <rdfs:label>Building Front</rdfs:label>
+        <skos:notation>CP11</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP12 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP12_Building_Floor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This class includes instances relating to a portion of a CP10 Building Unit between the floor and the ceiling. In residential buildings, instances of CP12 Building Floor normally correspond to the presence of one or more residential units, but in historic buildings, instances of CP12 Building Floor may include only part of a residential unit (such as for a row house, composed of overlapping rooms, or for a noble palace, which housed and may still house a family and its employees on all levels of the building). It is also not uncommon for historic residential buildings to combine a ground floor with commercial functions and residential upper floors or for different functions to overlap with each other. This is often the case in specialised buildings, where instances of CP12 Building Floor may also involve floor-to-ceiling portions with different organisational and functional characteristics (e.g. classrooms and staff offices in a school).</rdfs:comment>
+        <rdfs:label>Building Floor</rdfs:label>
+        <skos:notation>CP12</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP13 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP13_Urban_Unit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This class includes instances corresponding to a coherent architectural organism populating an urban historical setting. It consists in a single construction phase or by the merging/recasting of several pre-existing building units and can be described only in its exterior features. This organism is characterized by the presence of one or more functional units (residential and non-residential) connected to each other through common distribution elements and served by access at the road level; it is bordered by external facades with a generally continuous eaves line and a unitary or composite roof composed of flat and/or inclined parts consistent with all fronts. An urban unit can be constituted by a continuous set of structurally connected but distinguishable building units as organisms that are architecturally coherent populating an urban historical setting and may contain within it places relevant to one or more building units.  In this case, it overlooks on urban spaces through fronts that result from the succession of the individual facades of the building units. This specific type of urban unit is called ‘aggregate’. Alternatively, the urban unit can be a homogeneous and autonomous unitary element, bordered by urban spaces with whom it communicates through accesses to the ground floor and can contain open places inside. It overlooks urban spaces through a variable number of fronts generally figuratively and constructively coherent with each other. This another type is called 'residential or specialist punctual building unit' and consists in buildings such as villas or cottages (residential building) or complexes as hospitals or schools (specialist building) (Acierno, Fiorani, Velios 2021). Instances of CP13 Urban Unit differ from instances of CP2 Architectural Work for being related to an edifice that is considered a component of an urban historical setting. Meaning that instances of CP12 Urban Unit are building which are components of an urban tissue, where the main characteristic are the relationships established among them.
+</rdfs:comment>
+        <rdfs:label>Urban Unit</rdfs:label>
+        <skos:notation>CP13</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP14 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP14_Urban_Unit_Front">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This class includes instances corresponding to the set of facades on the same urban space – street or square – of the individual building units composing an urban unit.</rdfs:comment>
+        <rdfs:label>Urban Unit Front</rdfs:label>
+        <skos:notation>CP14</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP15 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP15_Open_Air_Area">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object"/>
+        <rdfs:comment>This class includes instances relating to environments and landscapes resulting consistent for natural and anthropic features. Sometimes this consistency is evident from a perceptive viewpoint, sometimes this consistency is perceivable as homogeneity of constituent features. Instances of CP15 Open Air Area can be squares, streets or gardens of an urban centre, but also parks and open landscapes related to a historic architectures or urban centres. Such instances may have a particular cultural value or also constitute elements of local connotation of a specific urban landscape.</rdfs:comment>
+        <rdfs:label>Open Air Area</rdfs:label>
+        <skos:notation>CP15</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP16 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP16_Urban_Area">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP15_Open_Air_Area"/>
+        <rdfs:comment>This class includes instances relating to the hollows of historic urban settlements, bounded by the fronts related to the urban units facing them and containing pavements, furniture, and possibly public green elements. These instances constitute a unified whole from a perceptual and functional point of view and very often represent particularly connotative elements of historic centers.</rdfs:comment>
+        <rdfs:label>Urban Area</rdfs:label>
+        <skos:notation>CP16</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP17 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP17_Landscape_Element">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP15_Open_Air_Area"/>
+        <rdfs:comment>This class includes instances relating to environments resulting consistent for natural and anthropic features and having a special cultural value. Sometimes this consistency is evident from a perceptive viewpoint, sometimes this consistency is perceivable as homogeneity. Such instances may possess a special cultural value and be defined as outstanding universal value in Unesco list or may have been subject to spatial and landscape constraints by national conservation agencies or zoning regulations. However, instances of CP17 Cultural Heritage Landscape Element may also simply connote a recognized locally significant urban or rural landscape.</rdfs:comment>
+        <rdfs:label>Landscape Element</rdfs:label>
+        <skos:notation>CP17</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP18 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/cpm-arch/cpm/CR10_CdR_Space_Entity"/>
+        <rdfs:comment>This class includes instances defined by sets of CP2 Architectural Work together with spaces related to architectural organisms, urban ensembles, or man-made landscapes. These instances represent 4D ensembles and can refer to the set that collects the constructed buildings and the empty spaces between them or to just the footprint of the empty spaces bounded by an urban physical perimeter or an architectural envelope. In either case, these instances are mutable over time, meaning that the shape and extent of the CP20 Spatial Entity can be changed over time and become precisely defined with the intersection of E53 Place and E52 Time-Span instances.</rdfs:comment>
+        <rdfs:label>Space Entity</rdfs:label>
+        <skos:notation>CP18</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP19 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP19_Historic_Centre">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:comment>This class includes instances of urban agglomeration composed by the historical buildings and the open spaces which formerly constituted the town during all the time of its existence. These instances represent 4D ensembles and refer to the set that collects the constructed buildings and the empty spaces between them. These instances are mutable over time, meaning that the shape and extent of the CP19 Historic Centre can be changed over time and become precisely defined with the intersection of E53 Place and E52 Time-Span instances.</rdfs:comment>
+        <rdfs:label>Historic Centre</rdfs:label>
+        <skos:notation>CP19</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP2 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This class comprises instances of Physical Human-Made Thing such as freestanding buildings and complexes of buildings, created for hosting or supporting every kind of human activities. Other instances can be urban or rural constructions realised to protect humans or to host different functions also with a symbolic meaning, as for triumphal arches and for funeral chapels. In addition, instances can be terminals of infrastructures, such as monumental fountains, as well as rooms created by excavating and modelling a rock for residential or religious purposes. CP2 Architectural Work may also comprise components of buildings when they maintain a recognisable formal identity, such as for a renaissance chapel built in a medieval basilica or a façade of a building, with its proper formal, constructive and material features. It refers to man-made environments, built for human needs, either practical, aesthetic or symbolic, being relatively permanent and stable and with a size and scale appropriate for - but not limited to - habitable buildings.</rdfs:comment>
+        <rdfs:label>Architecture work</rdfs:label>
+        <skos:notation>CP2</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP20 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP1_Built_Entity"/>
+        <rdfs:comment>This class includes instances of the constructive apparatus that characterizes an architecture. Instances of CP20 Construction Work can gather building units, components and elements that have specific functions from a constructional point of view or that delimit and/or support the building or parts of it.</rdfs:comment>
+        <rdfs:label>Construction Work</rdfs:label>
+        <skos:notation>CP20</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP21 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP21_Space_Unit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:comment>This class includes instances relating to the substance of the architectural or urban organism uniquely determinable on the basis of the characters of continuity and recognizability referred to the built (A-F Ingenio 2017). The instances of CP21 Space Unit are not physical objects but deals with the footprint of empty spaces defined by its changing physical presence over time, representing 4D ensembles.</rdfs:comment>
+        <rdfs:label>Space Unit</rdfs:label>
+        <skos:notation>CP21</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP22 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP22_Space_Component">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP18_Space_Entity"/>
+        <rdfs:comment>This class includes instances relating to a part of the architectural organism endowed with a spatial identity that cannot be further subdivided. Instances of CP22 Space Component are identified by their specific characters of continuity and recognizability referring to the built (A-F Ingenio 2017). They do not involve physical objects, but the footprint of empty space defined by them, subject to change over time, and represent 4D ensembles.</rdfs:comment>
+        <rdfs:label>Space Component</rdfs:label>
+        <skos:notation>CP22</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP23 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP23_Maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E11_Modification"/>
+        <rdfs:comment>This class comprises instances of E11 Modification undertaken to maintain the form, structure, and construction apparatus of the CP2 Architectural Work. This activity occurs at periodic scheduled intervals or resulting from the detection of local malfunctions in the building system; it is aimed at extending the life of the existing building and may involve the replacement or addition of materials, elements and construction components, while still pursuing a conservative intent. Instances of CP23 Maintenance differ from instances of CP25 Conservation Intervention because of their specific character of repetitiveness and cyclicality and the low conceptual problematic nature of the operations to be performed. In fact, these are carried out using general protocols based on different issues that can be: 1) the expectation of effectiveness of a product (e.g., a stone surface protector); 2) the expectation of effectiveness of a building component (such as the drainage of an eave in a roof); 3) the expectation of effectiveness of a building technique (such as the roofing tile covering of a roof); 4) the potential harmfulness of a climatic event (rain, heavy wind, etc); 5) the expected consequences of a phenomenon (deposition of limestone contained in water, growth of nearby vegetation). These issues can be tackled without having to field special diagnostics and studies and the severity of the problem, as well as the material impact of the intervention are always limited. It follows that the maintenance plan, as a simple management protocol, can be formalised via the CIDOC CRM. This plan can in fact be instantiated using the class E29 Design or Procedure, related to an instance of CP23 Maintenance via the property P33 used specific technique (was used by), inherited from its superclass E7 Activity. </rdfs:comment>
+        <rdfs:label>Maintenance</rdfs:label>
+        <skos:notation>CP23</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP24 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP24_Architecture_Conservation_Project_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:comment>This class comprises instances of E7 Activity intentionally carried out by instances of E39 Actor in order to develop a CP33 Conservation Project. The aim of this activity is to define technically the best choices for preserving, safeguarding, and using in a compatible way historic architectures, archaeological sites, hight value modern buildings developing the appropriate project tools. This activity has a multidisciplinary character and is oriented by the knowledge of the architecture to conserve.</rdfs:comment>
+        <rdfs:label>Architecture Conservation Project Activity</rdfs:label>
+        <skos:notation>CP24</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP25 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP25_Conservation_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:comment>This class comprises instances of E7 Activity produced to preserve historic architectures following the prescriptions of a CP24 Conservation Project Activity documented in CP33 Conservation Project.  as restoration project, protocols for planned conservation, maintenance plans, diagnostic plan.</rdfs:comment>
+        <rdfs:label>Conservation Intervention</rdfs:label>
+        <skos:notation>CP25</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP26 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP26_Typological Variation">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E81_Transformation"/>
+        <rdfs:comment>This class comprises the event that result in the simultaneous destruction of one or more than one CP2 Architectural Work and the creation of one or more than one CP2 Architectural Work that preserve recognizable substance and structure from the first one(s) but has fundamentally different nature or identity. Instances of CP26 Typological Variation deal with the organization of inner spaces, such as the distribution and connection of interior spaces in a residence or the internal organization of a church. A common example is the recasting of row houses into in-line palaces, with the interrelation of rooms on the same level, the elimination of the original vertical connectives and their replacement by a single staircase that distributes to all levels. Equally frequent was, especially during the late Italian Renaissance, the transformation of medieval three-nave churches into single-nave churches with chapels to meet post-Tridentine liturgical needs.  Typological variation does not necessarily entail a change in function and may tie in with fairly limited transformations of material substance, but it still brings about a substantial transformation in the way the affected architecture is used and experienced.
+</rdfs:comment>
+        <rdfs:label>Typological Variation</rdfs:label>
+        <skos:notation>CP26</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP27 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <rdfs:comment>This class comprises the actions of making assertions about one historical architecture or one or more of its components, also considering any single relation between various aspects concerning different architectures.  These assertions derive from the specialistic study of the historic architecture, concerning different aspects of the discipline.  For example, the class describes the actions of scholars and architects who make propositions and statements during some scientific procedures. These may be pertaining to the nature and layering of construction techniques present in the building, past units of measurement used to dimension spaces and structures, geometric proportioning criteria underlying the definition of spaces and structures, and lexical and linguistic references adopted as reference for formal choices. Possible instances of this class describe the results of the CP30 Architecture Condition Assessment or  the CP34 Architectural Feature Assessment.
+</rdfs:comment>
+        <rdfs:label>Architecture Analysis Output</rdfs:label>
+        <skos:notation>CP27</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP28 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP28_Building_Feature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:comment>This class comprises instances of CP2 Architectural Work related to the constitution of the building by a certain condition over a timespan. Among them, we have instances related to the masonry quality under different points of view, concerning the building characteristics, structural capacity, resistance to decay etc. Instances of CP28 Building Feature are also other characteristic, such as the presence and the nature of transverse connections, vertical inhomogeneities, connections between orthogonal walls and so on.</rdfs:comment>
+        <rdfs:label>Building Feature</rdfs:label>
+        <skos:notation>CP28</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP29 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP29_Building_Phase">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP27_Architecture_Analysis_Output"/>
+        <rdfs:comment>This class comprises instances of CP2 Architectural Work related to a unified construction process carried out over a defined period of time of a built presence. These instances, related to the restitution of the configuration of a historical building in a given historical period, are the product of in-depth knowledge of the building in its current state and inferential processes that can offer as objective indications as possible of the configuration of the building in a specific era.</rdfs:comment>
+        <rdfs:label>Building Phase</rdfs:label>
+        <skos:notation>CP29</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP3 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP3_Construction_Unit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:comment>This class includes instances of composite portions of a building that have specific functions from a constructional point of view or that delimit and/or support the building or parts of it.  Such instances may consist of the network of empty channels within the walls for smoke evacuation, the construction system of a wall (e.g., the two opposing faces and the intermediate core, any stone or plaster cladding), the construction system of a floor (e.g., consisting of main beams, secondary frames and wood planking, a layer of bedding mortar, and flooring).</rdfs:comment>
+        <rdfs:label>Construction Unit</rdfs:label>
+        <skos:notation>CP3</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP30 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP30_Architecture_Condition_Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment"/>
+        <rdfs:comment>This class comprises actions of making propositions or statements about architecture conditions based on hypothesis and any form or formal or informal logic. The aim of the CP30 Architecture Condition Assessment is the understanding of material decay and structural failure of CP2 Architectural Work and B1 Built Work.</rdfs:comment>
+        <rdfs:label>Architecture Condition Assessment</rdfs:label>
+        <skos:notation>CP30</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP31 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP31_Mechanical_Damage_Assessment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP30_Architecture_Condition_Assessment"/>
+        <rdfs:comment>This class describes the act of assessing the mechanical damage of a structure during a particular period. The mechanical damage may be carried out by the observation (directly or using a sufficient number of photos) of the structural disruptions found on the building (cracks, deformation and so on) and/or through historical research. It indicates the assessment about the manner in which a building is deformed and/or damaged by kinematic stresses, with particular reference to seismic phenomena.</rdfs:comment>
+        <rdfs:label>Mechanical Failure Assessment</rdfs:label>
+        <skos:notation>CP31</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP32 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP32_Architecture_Features_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:comment>This class comprises actions investigating instances of CP1 Built Entity, that can be determined by a systematic procedure. The aim of the CP32 Architectural Features Assessment is the understanding of constructive and formal features of CP2 Architectural Work and CP1 Built Entity. This class is used to document the building development, the technical, figurative and typological references of the architecture. </rdfs:comment>
+        <rdfs:label>Architecture Features Analysis</rdfs:label>
+        <skos:notation>CP32</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP33 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP33_Architecture_Conservation_Project">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+        <rdfs:comment>This class comprises documented plans for the executions of actions in order to achieve the preservation and compatible use or fruition of historic architectures, archaeological sites, hight-value modern buildings. These plans are depicted by drawings, protocols, and check list and they may result in new instances of CP38 Architecture Representation Object. They are used for shaping or guiding the execution of an instance of CP25 Conservation Intervention though the property Pc33 foresees (is foreseen by).  The existence of an instance of CP33 Architecture Conservation Project normally implies the intention of any actor to realize it, because it derives from the necessity to hinder any kind of conservation problems. CP33 Architecture Conservation Project is an architectural project dedicated to an existing building that is recognised as being of particular interest and value. For this reason, the role assumed by the study of the pre-existence takes on a particular importance, since the design choices of both conservative and creative nature are based on it. In fact, the main objective of the project is to preserve the material, historical and figurative values of the historic building, without sacrificing the building's formal and functional effectiveness. CP33 Architecture Conservation Project differs from ActE2 Activity Plan because of its specific nature that requires special technical tools also prescribed by law which must give information about the final state of the building and the specific techniques of intervention. An instance of an ActE2 Activity Plan, on the other hand, consists of a site implementation plan or a site safety plan, which regulate how the various restoration activities are to be conducted on site, also taking into account workers' clothing, as well as working times and methods.</rdfs:comment>
+        <rdfs:label>Architecture Conservation Project</rdfs:label>
+        <skos:notation>CP33</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP34 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP34_Architecture_Depiction">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E31_Document"/>
+        <rdfs:comment>This class allows the study of architecture to be documented through a description in words, orthophotos, drawings, digital models retrieved from an architectural survey.  It represents the knowledge expressed through a physical document (E22 Human made object) such as a drawing or a report.</rdfs:comment>
+        <rdfs:label>Architecture Depiction</rdfs:label>
+        <skos:notation>CP34</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP35 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP35_Building-Formal_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This class includes types that collect formal or constructive characteristics shared by structures, units, components, and elements of architecture. Instances of CP35 Building-formal Type may concern the figurative organization of facades (e.g., facades with overlapping orders, with giant order, with regular windows) or the construction characteristics of masonry (e.g., regular row wall in squared ashlars; rubble masonry; reticulated work). Each aspect of architecture that lends itself to being identified according to defined design or construction rules can be instantiated using CP35 Building-formal Type, according to its own typology of reference.</rdfs:comment>
+        <rdfs:label>Building-Formal Type</rdfs:label>
+        <skos:notation>CP35</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP36 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP36_Architecture_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This class describes the presence of specific formal invariants related to the inherent organizational, functional and constructive aspects of the building. Instances of CP38 Architectural Type can concern form and relative distribution of spaces in architecture, the nature of which has been codified over time by architectural history. Instances of CP38 Architectural Type are the residential building types of townhouses, courtyard, in-line, etc., or the church types with three naves, central, Greek cross, etc.</rdfs:comment>
+        <rdfs:label>Architecture Type</rdfs:label>
+        <skos:notation>CP36</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP37 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP37_Architecture_Graphic_Representation_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This class is a specialization of E55 Type and comprises the concepts of architectural representation. Instances of Cp37 Architecture Graphic Representation can be orthophotos, 3D models, orthographic projections.</rdfs:comment>
+        <rdfs:label>Architecture Graphic Representation Type</rdfs:label>
+        <skos:notation>CP37</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP38 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP38_Architecture_Representation_Element">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+        <rdfs:comment>This class comprises discrete, identifiable human made items created with the purpose to represent every kind of CP1 Built Entity using graphic or alpha-numeric representation, regardless to the scale of representation (from the urban scale to the detailed one). Instances of Cp38 Architecture Representation Object can be printed drawings, handmade sketches on paper, maquettes, reports on paper, or even digital models or 2D representation, files with structural or economic calculation, etc.</rdfs:comment>
+        <rdfs:label>Architecture Representation Object</rdfs:label>
+        <skos:notation>CP38</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP39 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP39_Architecture_Alpha-Numeric_Representation_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This class is a specialization of E55 Type and comprises the concepts of architecture that can be expressed by written and/or numerical elaboration. Instances of CP39 Architecture Alpha-Numeric Representation can be written reports, calculation reports, sheets and tables.</rdfs:comment>
+        <rdfs:label>Architecture Alpha-Numeric Representation Type</rdfs:label>
+        <skos:notation>CP39</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP4 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP4_Construction_Component">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:comment>This class includes instances of a part of the building unit which is consistent from the structural or technological viewpoint. Such instances may consist of the structural component of a floor or of a vault, excluding finishings such as flooring and plastering, the construction part of a wall (e.g., the two opposing faces and the intermediate core), as well as the door and window shutters.</rdfs:comment>
+        <rdfs:label>Construction Component</rdfs:label>
+        <skos:notation>CP4</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP40 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP40_Historic_Centre">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+        <rdfs:comment>This class includes instances of urban agglomeration composed by the historical buildings and the open spaces which formerly constituted the town. The historic centre is delimited by a perimeter that can sometimes coincide with the boundary of the city walls when they still exist or when they can be identified on the basis of historical records, material evidence, or on natural limits (streams, strong slopes, etc.). The chronological limit before the World War 1 (1919) normally identifies a part - generally central - of the town, but the contemporary city can also include several historic districts that are in fact disjointed. This threshold can sometimes result from the evident constructive mutation of the building, verified by the comparison with the available cartographic and historical graphic documentation and direct feedback (Fiorani 2019; Geores 2021). In terms of CPM ontology, instances of CP40 Historic Centres are composed by instances of CP13 Urban Units and CP16 Urban Area.</rdfs:comment>
+        <rdfs:label>Historic Centre</rdfs:label>
+        <skos:notation>CP40</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP41 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP41_Environmental_Observable_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This class includes instances of E5 Event that can be observed by human sensory impression on a global scale. It describes different types of environmental phenomena related to a specific place and affecting the state of preservation of buildings located there.  Class CP41 Observable Environmental Entity describes qualitatively - referring to common categories developed by experts in the field - the most relevant environmental conditions of a site, especially in relation to weather and climate conditions</rdfs:comment>
+        <rdfs:label>Environmental Observable Entity</rdfs:label>
+        <skos:notation>CP41</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP42 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP42_Material_Decay">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:comment>This class comprises natural events or man-made processes that create, alter or change physical things, with special reference to building material, by affecting permanently their form or consistency without changing their identity. These phenomena are generally pathological in nature per se or potentially and affect the physical features of a B1 Built Entity or, more generally, of a E18 Physical Thing. Instances of CP42 Material Decay are specifically referred to the phenomenon of material deterioration as defined in the Italian UNI 11182/2006 or in the Illustrated Glossary on Stone Deterioration Patterns from Icomos and ISCS. They collect the effect of addition to the material (surface deposit, efflorescence, crust, biological coating), but also the situations derived from the loss of material (disintegration, detachment, exfoliation, lacuna) or, simply, the change of some original characteristic of the material, such as the color appearance or the formation of stains, due to deterioration mechanisms.</rdfs:comment>
+        <rdfs:label>Material Decay</rdfs:label>
+        <skos:notation>CP42</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP43 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP43_Structural_Damage">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:comment>CP43 Structural Damage cases refer specifically to phenomena that cause changes in the structural behaviour of a CP1 Built Entity. These changes are normally due to failure mechanisms that favour the partial or total loss of a building's resistance capacity. Induced failure mechanisms manifest themselves with specific recognisable effects on building structures.Instances of CP43 Structural Damage thus refer, among others, to the phenomena of cracking, crushing of materials, deformation or change in the original position of a building structure as a whole or a part thereof.
+</rdfs:comment>
+        <rdfs:label>Structural Damage</rdfs:label>
+        <skos:notation>CP43</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP44 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP44_Construction_Site">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E27_Site"/>
+        <rdfs:comment>This class includes pieces of land or see plan where a single building, a group of buildings, or a historic centre has been placed. The concept of a site is broader than the area exactly occupied by the single architecture and defines the main characters of this area and its surroundings; in the presence of a villa, the construction site gathers the area of the entire complex, both built and green. In contrast to the purely geometric notion of E53 Place, this class describes constellations of matter on the surface of the Earth containing buildings, which can be represented by photographs, paintings, and maps. Instances of CP44 Construction Site e are composed of relatively immobile material items and features with specific morphology and use and a proper geologic composition of the ground.</rdfs:comment>
+        <rdfs:label>Construction Site</rdfs:label>
+        <skos:notation>CP44</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP45 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP45_Architecture_Project">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_orProcedures"/>
+        <rdfs:comment>This class comprises documented plans for the executions of actions to realise new architectures (in the present or in the past) or to radically transform existing buildings. These plans are depicted by drawings, reports, check list, bill of quantities, etc., and they may result in new instances of CP1 Built Entity or for shaping or guiding the execution of an instance of E7 Activity.Instances of CP45 Architectural Project can be related to the different kinds of the project of an architecture (concept plan, final project, executive project, execution variant, etc.). Architectural project can be also constituted by models, sketches, analytic description, in short, any kind of indication that may have been worked out for the purpose of on-site implementation of the building.</rdfs:comment>
+        <rdfs:label>Architecture Project</rdfs:label>
+        <skos:notation>CP45</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP46 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP46_Building_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:comment>This class comprises instances of E7 Activity produced to build a new architecture or to introduce new important transformation in it, normally documented in CP45 Architectural Project. Instances of CP45 Architectural Project can also deal with activities carried out without any real design when they are equally significant for the final architectural configuration</rdfs:comment>
+        <rdfs:label>Building Activity</rdfs:label>
+        <skos:notation>CP46</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP47 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP47_Decoration_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This class specifies the different types of decoration existing in a CP1 Built Entity. Instances of CP47 Decoration Type concern techniques used for decorating architectures, components or elements, such as painting techniques, sculptural treatments of stone or wood, etc</rdfs:comment>
+        <rdfs:label>Building Activity</rdfs:label>
+        <skos:notation>CP47</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP48 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP48_Equipment_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This class specifies the different types of CP8 Equipment. Instances of CP48 Equipment Type can refer to plumbing, electrical or heating system, etc</rdfs:comment>
+        <rdfs:label>Equipment Type</rdfs:label>
+        <skos:notation>CP48</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP49_Urban_Plan">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+        <rdfs:comment>This class includes urban planning instruments aimed at planning the activities to be carried out on cities; these instruments design and regulate uses of space focused on the physical form, economic functions, and social impacts of the urban environment. Instances of CP49 Urban Plan are urban instruments that identify the architectural, functional and constructive characteristics of existing buildings and sites and envisage the operations to be carried out in terms of the provision of services and infrastructure, new construction, transformation of existing buildings They can also contain restrictive constraints on the actions to be taken on the existing building. These plans are depicted by drawings, reports, check list, and forms address new instances of CP5 Architecture Project. Instances of CP49 Urban Plan can also be related to plans that modify already existing plans</rdfs:comment>
+        <rdfs:label>Urban Plan</rdfs:label>
+        <skos:notation>CP49</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP5 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP5_Construction_Element_Plural">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:comment>This class includes instances of the constructive component characterised by a technical specificity. Such instances may consist of masonry faces, roofing systems covering the trusses in a wooden roof, coffering ceiling, the window frames, the plaster cladding a wall.</rdfs:comment>
+        <rdfs:label>Construction Element Plural</rdfs:label>
+        <skos:notation>CP5</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP50 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP50_Urban_Conservation_Plan">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+        <rdfs:comment>This class includes urban planning instruments aimed at planning the conservation activities to be carried out on historical architecture; these instruments design and regulate interventions focused on the physical form and the construction structure of the historical urban environment. Instances of CP50 Urban Conservation Plan are urban instruments that identify the architectural, functional and constructive characteristics of existing buildings and sites and envisage the operations to be carried out in terms conservation and restoration of of existing buildings They contain restrictive constraints on the actions to be taken on the existing building but also the guidelines to orient how to intervene on the historical façades (in terms of colours, materials and constructive solutions), to the inner part of the building (preserving their historical character but also using compatible solution to allow the introduction of modern equipment and services), to the open areas (orienting the choices about materials, techniques and furniture). These plans are depicted by drawings, reports, check list, and forms address new instances of CP33 Architecture Conservation Project. Instances of CP50 Urban Conservation Plan can also be related to plans that modify already existing plans</rdfs:comment>
+        <rdfs:label>Urban Conservation Plan</rdfs:label>
+        <skos:notation>CP50</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP51 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP51_Building_Component">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP2_Architecture_Work"/>
+        <rdfs:comment>This class includes instances relating to parts of the architectural organism that subtend spaces that cannot be further subdivided. The instances of CP51 Building Component are identified on the basis of their specific characters of continuity and recognisability ascribable to a given period of time. These characters refer both to the physical architectural and building components and to the space that is defined by them.  </rdfs:comment>
+        <rdfs:label>Building Component</rdfs:label>
+        <skos:notation>CP51</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP6 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP6_Construction_Element_Singular">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpm-arch/cpm/CP20_Construction_Work"/>
+        <rdfs:comment>This class includes instances of the constructive component characterised by a proper material specificity. Such instances may consist of masonry faces, roofing systems covering the trusses in a wooden roof, coffering ceiling, the window frames, the plaster cladding a wall.</rdfs:comment>
+        <rdfs:label>Construction Element Singular</rdfs:label>
+        <skos:notation>CP6</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP7 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP7_Architecture_Decoration">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-made_Thing"/>
+        <rdfs:comment>This class includes instances of decorative apparatus closely related to the composition of the architectural work. Such instances may consist of figurative paintings on the façades of a building or on the inner face of the walls in a church, as well as stuccoes, graffiti, ceramic cladding and sculptures attached to the walls of the building. Unlike instances of CP6 Constructive Element Singular, instances of CP7 Architectural Decoration do not usually play a specific role in the construction other than strictly decorative. This means that in the presence of a stone lintel carved in bas-relief, the lintel as a structural element must be considered as an instance of CP6 Constructive Element Singular, while its vertical surface with bas-relief can be instantiated as CP7 Architectural Decoration. Similarly, the metal key head should be instantiated as of CP6 Constructive Element Singular, while the cover stud should be instantiated as CP7 Architectural Decoration. When the constructive and decorative aspects are not separable (e.g. the decorated wrought iron balustrade of a balcony), the element may be instantiated as either CP6 Constructive Element Singular or CP7 Architectural Decoration.</rdfs:comment>
+        <rdfs:label>Architecture Decoration</rdfs:label>
+        <skos:notation>CP7</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP8 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP8_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-made_Thing"/>
+        <rdfs:comment>This class includes instances of plant systems pertaining a single architectural work. Such instances can have different nature, regarding the web and the terminals used for the distribution of water, electricity, heating or cooling etc. in a building.</rdfs:comment>
+        <rdfs:label>Equipment</rdfs:label>
+        <skos:notation>CP8</skos:notation>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/cpm-arch/cpm/CP9 -->
+
+    <owl:Class rdf:about="https://w3id.org/cpm-arch/cpm/CP9_Building_Material">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-made_Thing"/>
+        <rdfs:comment>This class includes instances of structural products, manufactured as standard units, intended for use in building construction (AAT).</rdfs:comment>
+        <rdfs:label>Building Material</rdfs:label>
+        <skos:notation>CP9</skos:notation>
+    </owl:Class>
+</rdf:RDF>
