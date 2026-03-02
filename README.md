@@ -11,6 +11,10 @@ It focuses on the specificities of architecture, of the project of architectural
 ## Maintainers:
 - GitHub ID: @alvaccariello
 
+### CPM Authors:
+<a href="https://orcid.org/0000-0003-3472-4229"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon"> Donatella Fiorani</a>, 
+<a href="https://orcid.org/000-0002-5132-6858"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon"> Marta Acierno</a>
+
 ### CPM Management Group:
 <a href="https://orcid.org/0000-0003-3472-4229"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon"> Donatella Fiorani</a>, 
 <a href="https://orcid.org/000-0002-5132-6858"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon"> Marta Acierno</a>
