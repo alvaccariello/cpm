@@ -30,3 +30,8 @@ You can find CPM in the Ontome Portal here: https://ontome.net/namespace/250
 
 You can find the specific publication here: https://www.editricesapienza.it/sites/default/files/6249_9788893773843_Conservation_Process_Model_eBook.pdf
 
+Ontology files:
+
+- ontology.rdf
+- ontology.ttl
+
